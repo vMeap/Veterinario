@@ -1,12 +1,75 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header {
-    padding: 20px;
+:root {
+    --blue: #1456d9;
+    --blue-dark: #0d47bf;
+    --text: #14213d;
+    --text-soft: #6b7280;
+    --bg: #f5f7fb;
+    --white: #ffffff;
+    --border: #e5e7eb;
+    --shadow: 0 4px 14px rgba (0, 0, 0, 0.06);
+
+    --green: #22c55e;
+    --green-bg: #dcfce7;
+
+    --orange: #f97316;
+    --orange-bg: #fff7ed;
+
+    --red: #ef4444;
+    --red-bg: #fef2f2;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.topbar {
+  background-color: linear-gradient(90deg, var(--blue-dark), var(--blue));
+  color: white;
+  padding: 16px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo i {
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.menu a.active {
+    border-bottom: 3px solid white;
+}
+
+
+
 
 nav {
     padding: 15px;
